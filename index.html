@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvalDOM</title>
+    <link rel="stylesheet" href="style.css">
+        <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <button id="toggle-navbar">...</button>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#menu1" id="menu-link-1">Menu 1</a></li>
+                <li><a href="#menu2" id="menu-link-2">Menu 2</a></li>
+                <li><a href="#menu3" id="menu-link-3">Menu 3</a></li>
+                <li><a href="#menu4" id="menu-link-4">Menu 4</a></li>
+                <li><a href="#menu5" id="menu-link-5">Menu 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="menu1" class="menu-item">
+        <table id="tableimg">
+            <tr>
+              <td><a href="#" id="image1">Lien 1<img src="image1.png"/></a></td>
+              <td><a href="#" id="image2">Lien 2<img src="image2.png"/></a></td>
+              <td><a href="#" id="image3">Lien 3<img src="image3.png"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="#" id="image4">Lien 4<img src="image4.png"/></a></td>
+              <td><a href="#" id="image5">Lien 5<img src="image5.png"/></a></td>
+              <td><a href="#" id="image6">Lien 6<img src="image6.png"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="#" id="image7">Lien 7<img src="image7.png"/></a></td>
+              <td><a href="#" id="image8">Lien 8<img src="image8.png"/></a></td>
+              <td><a href="#" id="image9">Lien 9<img src="image9.png"/></a></td>
+            </tr>
+          </table>
+            <img id="displayed-image" src="#">
+    </div>
+
+    <div id="menu2" class="menu-item">
+        <div>
+            <label for="first-name">Prénom:</label>
+            <input type="text" id="first-name">
+            <br>
+            <label for="last-name">Nom:</label>
+            <input type="text" id="last-name">
+            <br>
+            <button id="add-button">Ajouter au tableau</button>
+          </div>
+          
+          <table id="name-table">
+            <thead>
+              <tr>
+                <th>Table</th>
+              </tr>
+              <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+              </tr>
+            </thead>
+            <tbody id="name-table-body">
+            </tbody>
+          </table>
+          
+    </div>
+
+    <div id="menu3" class="menu-item">
+        <select id="styleSelector">
+            <option value="style1">Style 1</option>
+            <option value="style2">Style 2</option>
+            <option value="style3">Style 3</option>
+          </select>
+          <h1>Paragraphe</h1>
+          <div id="text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid ea molestiae corrupti fugiat minus natus cupiditate, blanditiis soluta doloribus dolores tempore esse cumque sed facilis id impedit odio delectus. Laboriosam.
+          </div>
+    </div>
+
+    <div id="menu4" class="menu-item">
+        <ul id="list">
+            <li id="item1">Elément 1</li>
+            <li id="item2">Elément 2</li>
+            <li id="item3">Elément 3</li>
+            <li id="item4">Elément 4</li>
+          </ul>
+          <br>
+          <button id="upButton">Up</button>
+          <button id="downButton">Down</button>
+    </div>
+
+    <div id="menu5" class="menu-item">
+        <p>
+            <input type="checkbox" name="checkbox" value="Option 1">Option 1
+          </p>
+          <p>
+            <input type="checkbox" name="checkbox" value="Option 2">Option 2
+          </p>
+          <p>
+            <input type="checkbox" name="checkbox" value="Option 3">Option 3
+          </p>
+          <p>
+            <input type="checkbox" name="checkbox" value="Option 4">Option 4
+          </p>
+          <p>
+            <input type="radio" name="group" value="div" onclick="createElements()">div
+            <input type="radio" name="group" value="opt" onclick="createElements()">opt
+          </p>
+
+          <div id="container"></div>
+    </div>
+    <script src="script.js">
+    </script> 
+</body>
+</html>
